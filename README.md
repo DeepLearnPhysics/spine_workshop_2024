@@ -1,6 +1,6 @@
-# SPINE Reconstruction Workshop
+# SPINE Workshop 2024
 
-This repository is for a workshop organized for the SBN and 2x2 ML reconstruction group to train new comers to learn about SPINE, i.e. our machine-learning-based data reconstruction chain. You can find the workshop agenda [here](https://indico.slac.stanford.edu/event/8926/).
+This repository contains all necessary resources to participate in the 2024 SPINE workshop organized for the SBN and 2x2 ML reconstruction groups. This workshop aims to train new comers to use SPINE, our machine-learning-based particle imaging detector reconstruction chain. You can find the workshop agenda [here](https://indico.slac.stanford.edu/event/8926/).
 
 ## Software environment
 
