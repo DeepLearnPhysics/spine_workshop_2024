@@ -1,6 +1,6 @@
-# SPINE ML-Based Reconstruction Workshop
+# SPINE Reconstruction Workshop
 
-This repository is for a workshop organized for the SBN and 2x2 ML reconstruction group to train new comers to learn about our machine-learning-based data reconstruction chain. You can find the workshop agenda [here](https://indico.slac.stanford.edu/event/8926/).
+This repository is for a workshop organized for the SBN and 2x2 ML reconstruction group to train new comers to learn about SPINE, i.e. our machine-learning-based data reconstruction chain. You can find the workshop agenda [here](https://indico.slac.stanford.edu/event/8926/).
 
 ## Software environment
 
