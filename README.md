@@ -70,10 +70,16 @@ $ docker run -i -t cd28cb3cd04b bash
 3. The *network model parameters* for the inference tutorial can be found at:
 - S3DF
 ```shell
-/sdf/group/neutrino/drielsma/train/icarus/localized/full_chain/weights/full_chain/grappa_inter_nomlp/snapshot-2999.ckpt
+/sdf/data/neutrino/public_html/spine_workshop/weights/generic_snapshot-4999.ckpt # Generic
+/sdf/data/neutrino/public_html/spine_workshop/weights/icarus_snapshot-7999.ckpt # ICARUS
+/sdf/data/neutrino/public_html/spine_workshop/weights/sbnd_snapshot-1999.ckpt # SBND
+/sdf/data/neutrino/public_html/spine_workshop/weights/2x2_snapshot-3999.ckpt # 2x2
 ```
 - Public
-  - [snapshot-2999.ckpt](https://drive.google.com/file/d/1jKcNHWSk-MgyRM7fqQF8Tsgb5VCadKbR/view?usp=sharing)
+  - Generic: [generic_snapshot-2999.ckpt](https://s3df.slac.stanford.edu/data/neutrino/spine_workshop/weights/generic_snapshot-4999.ckpt)
+  - ICARUS: [icarus_snapshot-7999.ckpt](https://s3df.slac.stanford.edu/data/neutrino/spine_workshop/weights/icarus_snapshot-7999.ckpt)
+  - SBND: [sbnd_snapshot-1999.ckpt](https://s3df.slac.stanford.edu/data/neutrino/spine_workshop/weights/sbnd_snapshot-1999.ckpt)
+  - 2x2: [2x2_snapshot-3999.ckpt](https://s3df.slac.stanford.edu/data/neutrino/spine_workshop/weights/2x2_snapshot-3999.ckpt)
 
 ## Computing resource
 Most of the notebooks can be run strictly on CPU. The following notebooks will run significantly slower on CPU, however:
