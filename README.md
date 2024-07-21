@@ -47,12 +47,20 @@ $ docker run -i -t cd28cb3cd04b bash
 2. You can find *data files* for the examples used in this workshop under:
 - S3DF
 ```shell
-/sdf/data/neutrino/icarus/workshop2024/larcv/ # Example MPV/MPR LArCV files prior to reconstruction
-/sdf/data/neutrino/icarus/workshop2024/reco/  # Reconstructed HDF5 files
+/sdf/data/neutrino/public_html/spine_workshop/larcv/ # Example MPV/MPR LArCV files prior to reconstruction
+/sdf/data/neutrino/public_html/spine_workshop/reco/  # Reconstructed HDF5 files
 ```
 - Public
-  - [MPVMPR LArCV file](https://drive.google.com/file/d/1nP-fCq3e59rOePfDvECRsxoToUT03QLj/view?usp=sharing) (Day 1)
-  - [MPVMPR HDF5 file](https://drive.google.com/file/d/1mz1fGuKyMMwzdYBw_qRvWfns1K3FTEPC/view?usp=drive_link) (Day 2, 3)
+  - [Small LArCV files](https://s3df.slac.stanford.edu/data/neutrino/spine_workshop/larcv/) (Day 1)
+    - [Generic](https://s3df.slac.stanford.edu/data/neutrino/spine_workshop/larcv/generic_small.root)
+    - [ICARUS](https://s3df.slac.stanford.edu/data/neutrino/spine_workshop/larcv/icarus_small.root)
+    - [SBND](https://s3df.slac.stanford.edu/data/neutrino/spine_workshop/larcv/sbnd_small.root)
+    - [2x2](https://s3df.slac.stanford.edu/data/neutrino/spine_workshop/larcv/2x2_small.root)
+  - [Small corresponding reconstructed HDF5 files](https://s3df.slac.stanford.edu/data/neutrino/spine_workshop/reco/)
+    - [Generic](https://s3df.slac.stanford.edu/data/neutrino/spine_workshop/larcv/generic_small_spine.h5)
+    - [ICARUS](https://s3df.slac.stanford.edu/data/neutrino/spine_workshop/larcv/icarus_small_spine.h5)
+    - [SBND](https://s3df.slac.stanford.edu/data/neutrino/spine_workshop/larcv/sbnd_small_spine.h5)
+    - [2x2](https://s3df.slac.stanford.edu/data/neutrino/spine_workshop/larcv/2x2_small_spine.h5)
   - [BNB numu + cosmics](https://drive.google.com/file/d/13zSSXzWO1rsigWirtcp2vjU3EWFV4CAy/view?usp=sharing) (Day 4, 5)
   - [BNB intime cosmics](https://drive.google.com/file/d/1qBDUmCPjSsNi_SW6L6tWduPSFcBQaTMW/view?usp=sharing) (Day 4)
   - [BNB nue + cosmics](https://drive.google.com/file/d/1TwEgVMGXB8ZbrW2tdBcWFrIx4A0YTcj8/view?usp=drive_link) (Day 4)
