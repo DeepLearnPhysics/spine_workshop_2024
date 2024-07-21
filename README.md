@@ -56,7 +56,7 @@ $ docker run -i -t cd28cb3cd04b bash
     - [ICARUS](https://s3df.slac.stanford.edu/data/neutrino/spine_workshop/larcv/icarus_small.root)
     - [SBND](https://s3df.slac.stanford.edu/data/neutrino/spine_workshop/larcv/sbnd_small.root)
     - [2x2](https://s3df.slac.stanford.edu/data/neutrino/spine_workshop/larcv/2x2_small.root)
-  - [Small corresponding reconstructed HDF5 files](https://s3df.slac.stanford.edu/data/neutrino/spine_workshop/reco/)
+  - [Small corresponding reconstructed HDF5 files](https://s3df.slac.stanford.edu/data/neutrino/spine_workshop/reco/) (Day 2)
     - [Generic](https://s3df.slac.stanford.edu/data/neutrino/spine_workshop/larcv/generic_small_spine.h5)
     - [ICARUS](https://s3df.slac.stanford.edu/data/neutrino/spine_workshop/larcv/icarus_small_spine.h5)
     - [SBND](https://s3df.slac.stanford.edu/data/neutrino/spine_workshop/larcv/sbnd_small_spine.h5)
