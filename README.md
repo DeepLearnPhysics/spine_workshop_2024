@@ -15,7 +15,10 @@ Some notes below:
 ```shell
 $ singularity pull docker://deeplearnphysics/larcv2:ub20.04-cuda11.6-pytorch1.13-larndsim
 ```
-
+For nersc:
+```shell
+$ /cvmfs/oasis.opensciencegrid.org/mis/apptainer/current/bin/apptainer pull docker://deeplearnphysics/larcv2:ub20.04-cuda11.6-pytorch1.13-larndsim
+```
 You can now launch a shell inside the singularity with
 ```shell
 $ singularity exec --bind /path/to/workshop/folder/ larcv2_ub20.04-cuda11.6-pytorch1.13-larndsim.sif bash
