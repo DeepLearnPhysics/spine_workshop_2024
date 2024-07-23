@@ -10,14 +10,14 @@ Some notes below:
 
 * The image is fairly large (multiple GBs). Please download in advance if you are using it locally. It is used in both NVIDIA GPU and CPU running mode of our software.
 * Supported GPUs include those with NVIDIA Volta (e.g. V100), Turing (e.g. RTX 2080Ti), and Ampere architectures (e.g. A100, RTX 3080). If you want an older architectures to be supported, such as Pascal, please [contact Kazu](mailto:kterao@slac.stanford.edu).
-* We assume basic knowledge about _software container_, in particular `Docker`. If you are learning for the first time, we recommend to use/learn about `Singularity` ([website](https://singularity.hpcng.org/)) instead of `Docker`.
-    * You can pull a singularity image as follows
+* We assume basic knowledge about _software container_, in particular `Docker`. If you are learning for the first time, we recommend to use/learn about `Apptainer` ([website](https://apptainer.org/docs/user/latest/)) instead of `Docker`.
+    * You can pull a apptainer image as follows
 ```shell
-$ singularity pull docker://deeplearnphysics/larcv2:ub20.04-cuda11.6-pytorch1.13-larndsim
+$ apptainer pull docker://deeplearnphysics/larcv2:ub20.04-cuda11.6-pytorch1.13-larndsim
 ```
-You can now launch a shell inside the singularity with
+You can now launch a shell inside the apptainer with
 ```shell
-$ singularity exec --bind /path/to/workshop/folder/ larcv2_ub20.04-cuda11.6-pytorch1.13-larndsim.sif bash
+$ apptainer exec --bind /path/to/workshop/folder/ larcv2_ub20.04-cuda11.6-pytorch1.13-larndsim.sif bash
 ```
 For nersc:
 ```shell
@@ -52,6 +52,11 @@ $ docker run -i -t cd28cb3cd04b bash
 /sdf/data/neutrino/public_html/spine_workshop/larcv/ # Example MPV/MPR LArCV files prior to reconstruction
 /sdf/data/neutrino/public_html/spine_workshop/reco/  # Reconstructed HDF5 files
 ```
+- NERSC
+```shell
+/global/cfs/cdirs/dune/users/drielsma/spine_workshop/larcv/ # Example MPV/MPR LArCV files prior to reconstruction
+/global/cfs/cdirs/dune/users/drielsma/spine_workshop/reco/  # Reconstructed HDF5 files
+```
 - Public
   - [Small LArCV files](https://s3df.slac.stanford.edu/data/neutrino/spine_workshop/larcv/) (Day 1)
     - [Generic](https://s3df.slac.stanford.edu/data/neutrino/spine_workshop/larcv/generic_small.root)
@@ -77,6 +82,13 @@ $ docker run -i -t cd28cb3cd04b bash
 /sdf/data/neutrino/public_html/spine_workshop/weights/sbnd_snapshot-1999.ckpt # SBND
 /sdf/data/neutrino/public_html/spine_workshop/weights/2x2_snapshot-3999.ckpt # 2x2
 ```
+- NERSC
+```shell
+/global/cfs/cdirs/dune/users/drielsma/spine_workshop/weights/generic_snapshot-4999.ckpt # Generic
+/global/cfs/cdirs/dune/users/drielsma/spine_workshop/weights/icarus_snapshot-7999.ckpt # ICARUS
+/global/cfs/cdirs/dune/users/drielsma/spine_workshop/weights/sbnd_snapshot-1999.ckpt # SBND
+/global/cfs/cdirs/dune/users/drielsma/spine_workshop/weights/2x2_snapshot-3999.ckpt # 2x2
+```
 - Public
   - Generic: [generic_snapshot-2999.ckpt](https://s3df.slac.stanford.edu/data/neutrino/spine_workshop/weights/generic_snapshot-4999.ckpt)
   - ICARUS: [icarus_snapshot-7999.ckpt](https://s3df.slac.stanford.edu/data/neutrino/spine_workshop/weights/icarus_snapshot-7999.ckpt)
@@ -89,7 +101,7 @@ Most of the notebooks can be run strictly on CPU. The following notebooks will r
 - Inference and HDF5 file making notebook
 
 For all other notebooks, you can run them locally, provided that you download:
-- Singularity container
+- Apptainer container
 - Necessary data
 - [SPINE v0.1.0](https://github.com/DeepLearnPhysics/spine)
 
@@ -98,11 +110,11 @@ To gain access to GPUs:
   - SDF Jupyter ondemand: https://sdf.slac.stanford.edu/public/doc/#/
   - S3DF Jupyter ondemand: https://s3df.slac.stanford.edu/public/doc/#/
 
-* SBN collaborators also have access to the Wilson Cluster at FNAL, equipped with GPUs. Below is a few commands to log-in and load `Singularity` with which you can run a container image for the workshop (see the previous section). For how-to utilize the Wilson Cluster, refer to [their website](https://computing.fnal.gov/wilsoncluster/slurm-job-scheduler/) as well as [this](https://cdcvs.fnal.gov/redmine/projects/nova_reconstruction/wiki/The_Wilson_Cluster) and [that](https://cdcvs.fnal.gov/redmine/projects/nova_reconstruction/wiki/Step-by-step_guide_to_running_on_the_WC) documentation from NOvA (replace `nova` with `icarus` or `sbnd` and most commands should just work).
+* SBN collaborators also have access to the Wilson Cluster at FNAL, equipped with GPUs. Below is a few commands to log-in and load `Apptainer` with which you can run a container image for the workshop (see the previous section). For how-to utilize the Wilson Cluster, refer to [their website](https://computing.fnal.gov/wilsoncluster/slurm-job-scheduler/) as well as [this](https://cdcvs.fnal.gov/redmine/projects/nova_reconstruction/wiki/The_Wilson_Cluster) and [that](https://cdcvs.fnal.gov/redmine/projects/nova_reconstruction/wiki/Step-by-step_guide_to_running_on_the_WC) documentation from NOvA (replace `nova` with `icarus` or `sbnd` and most commands should just work).
 
 ```shell
 $ ssh $USER@wc.fnal.gov
-$ module load singularity
-$ singularity --version
-singularity version 3.6.4
+$ module load apptainer
+$ apptainer --version
+apptainer version 3.6.4
 ```
