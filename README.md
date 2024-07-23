@@ -52,6 +52,11 @@ $ docker run -i -t cd28cb3cd04b bash
 /sdf/data/neutrino/public_html/spine_workshop/larcv/ # Example MPV/MPR LArCV files prior to reconstruction
 /sdf/data/neutrino/public_html/spine_workshop/reco/  # Reconstructed HDF5 files
 ```
+- NERSC
+```shell
+/global/cfs/cdirs/dune/users/drielsma/spine_workshop/larcv/ # Example MPV/MPR LArCV files prior to reconstruction
+/global/cfs/cdirs/dune/users/drielsma/spine_workshop/reco/  # Reconstructed HDF5 files
+```
 - Public
   - [Small LArCV files](https://s3df.slac.stanford.edu/data/neutrino/spine_workshop/larcv/) (Day 1)
     - [Generic](https://s3df.slac.stanford.edu/data/neutrino/spine_workshop/larcv/generic_small.root)
@@ -76,6 +81,13 @@ $ docker run -i -t cd28cb3cd04b bash
 /sdf/data/neutrino/public_html/spine_workshop/weights/icarus_snapshot-7999.ckpt # ICARUS
 /sdf/data/neutrino/public_html/spine_workshop/weights/sbnd_snapshot-1999.ckpt # SBND
 /sdf/data/neutrino/public_html/spine_workshop/weights/2x2_snapshot-3999.ckpt # 2x2
+```
+- NERSC
+```shell
+/global/cfs/cdirs/dune/users/drielsma/spine_workshop/weights/generic_snapshot-4999.ckpt # Generic
+/global/cfs/cdirs/dune/users/drielsma/spine_workshop/weights/icarus_snapshot-7999.ckpt # ICARUS
+/global/cfs/cdirs/dune/users/drielsma/spine_workshop/weights/sbnd_snapshot-1999.ckpt # SBND
+/global/cfs/cdirs/dune/users/drielsma/spine_workshop/weights/2x2_snapshot-3999.ckpt # 2x2
 ```
 - Public
   - Generic: [generic_snapshot-2999.ckpt](https://s3df.slac.stanford.edu/data/neutrino/spine_workshop/weights/generic_snapshot-4999.ckpt)
