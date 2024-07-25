@@ -70,6 +70,8 @@ $ docker run -i -t cd28cb3cd04b bash
     - [2x2](https://s3df.slac.stanford.edu/data/neutrino/spine_workshop/reco/2x2_small_spine.h5)
   - [Medium reconstructed HDF5 files](https://s3df.slac.stanford.edu/data/neutrino/spine_workshop/reco/) (Day 2)
     - [Generic](https://s3df.slac.stanford.edu/data/neutrino/spine_workshop/reco/generic_medium_spine.h5)
+    - [ICARUS](https://s3df.slac.stanford.edu/data/neutrino/spine_workshop/reco/icarus_medium_spine.h5)
+    - [SBND](https://s3df.slac.stanford.edu/data/neutrino/spine_workshop/reco/sbnd_medium_spine.h5)
   - [BNB numu + cosmics](https://drive.google.com/file/d/13zSSXzWO1rsigWirtcp2vjU3EWFV4CAy/view?usp=sharing) (Day 4, 5)
   - [BNB intime cosmics](https://drive.google.com/file/d/1qBDUmCPjSsNi_SW6L6tWduPSFcBQaTMW/view?usp=sharing) (Day 4)
   - [BNB nue + cosmics](https://drive.google.com/file/d/1TwEgVMGXB8ZbrW2tdBcWFrIx4A0YTcj8/view?usp=drive_link) (Day 4)
